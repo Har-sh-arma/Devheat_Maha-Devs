@@ -1,0 +1,6 @@
+.mao {
+    height: 100vh;
+    width: 100%;
+    background-image: url("../../../media/mainpgdesign.svg");
+    background-size: cover;
+}
