@@ -24,7 +24,7 @@ const Spage = () => {
                     </div>
 
                     <div className='txt_field'>
-                        <input type='password' id='pswd' required />
+                        <input type='password' id='pswd' required minLength={6} maxLength={25} />
                         <span></span>
                         <label>Password</label>
                     </div>

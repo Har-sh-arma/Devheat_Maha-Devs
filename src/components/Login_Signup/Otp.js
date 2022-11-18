@@ -13,7 +13,7 @@ const Otp = () => {
                 <form onSubmit={e => SetCred({ ...Credentials, username: document.getElementById('otp').value })}>
 
                     <div className='txt_field'>
-                        <input type='password' id='otp' required />
+                        <input type='password' id='otp' required maxLength={4} minLength={4} />
                         <span></span>
                         <label>OTP</label>
                     </div>
