@@ -3,11 +3,13 @@ import { useState } from 'react'
 const Spage = () => {
 
     const [Credentials, SetCred] = useState({ username: '', email: '', password: '' });
+
+
     return (
         <div className='pgCont'>
             <div className='center'>
                 <h1 id='mainh'>Signup</h1>
-                <form onSubmit={e => SetCred({ ...Credentials, username: document.getElementById('usrnm').value, email: document.getElementById('eml').value, password: document.getElementById('pswd').value })}>
+                <form onSubmit={e => SetCred({ ...Credentials, username: document.getElementById('usrnm').value, email: document.getElementById('eml').value, password: document.getElementById('pswd').value })} action='./Otp' >
 
                     <div className='txt_field'>
                         <input type='text' id='usrnm' required />
@@ -30,7 +32,7 @@ const Spage = () => {
                     <input type='submit' value='Signup' />
 
                     <div className='signup_link'>
-                        Already have an account? <a href='./Lspage'>Login</a>
+                        Already have an account? <a href='./Lspage' >Login</a>
                     </div>
 
                 </form>

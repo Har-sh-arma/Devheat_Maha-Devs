@@ -2,6 +2,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Lspage from './components/Login_Signup/Lspage';
 import Spage from './components/Login_Signup/Spage';
 import Main from './components/Mainpg/Main'
+import Otp from "./components/Login_Signup/Otp";
 // import Maps from "./components/Location/Maps";
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
           <Route path="/Lspage" element={<Lspage />} />
           <Route path='/Spage' element={<Spage />} />
           <Route path='/Main' element={<Main />} />
+          <Route path="/Otp" element={<Otp />} />
           {/* <Route path="/Maps" element={<Maps />} /> */}
         </Routes>
       </BrowserRouter>
