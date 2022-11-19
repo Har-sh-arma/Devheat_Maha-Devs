@@ -3,4 +3,111 @@
     width: 100%;
     background-image: url("../../../media/mainpgdesign.svg");
     background-size: cover;
+    padding-top: 12vh;
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    align-items: center;
+}
+
+.current {
+    width: 90%;
+    height: 30vh;
+    background-color: rgba(219, 254, 113, 0.521);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sugg {
+    margin-top: 15vh;
+    width: 90%;
+    height: 30vh;
+    background-color: rgba(219, 254, 113, 0.521);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+h2 {
+    margin-top: 5px;
+    /* background-color: rgba(119, 255, 0, 0.463); */
+    height: 2.5rem;
+    width: 90%;
+    padding: 0 3px;
+    border-radius: 5px;
+    box-shadow: black;
+    text-align: center;
+}
+
+#menu {
+    width: 75vw;
+    height: 2rem;
+    margin-top: 3vh;
+    border-radius: 5px;
+    border: 2px solid green;
+}
+
+.but {
+    width: 50vw;
+    height: 3rem;
+    margin-top: 6vh;
+    border-radius: 5px;
+    margin-left: 0;
+    margin-right: 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-align: center;
+    background-color: rgba(119, 255, 0, 0.463);
+    border: 1px solid green;
+
+    /* padding-bottom: 6px; */
+}
+
+#ptc {
+    width: 50vw;
+    height: 3rem;
+    margin-top: 1vh;
+    border-radius: 5px;
+    margin-left: 0;
+    margin-right: 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-align: center;
+    background-color: rgba(119, 255, 0, 0.463);
+    border: 1px solid green;
+}
+
+#plantthis {
+    margin-top: 75vh;
+    font-size: 1.6rem;
+    font-weight: 600;
+    padding: 8px;
+    border: 2px solid green;
+    border-radius: 15px;
+    background-color: rgba(119, 255, 0, 0.463);
+    color: green;
+}
+
+.cropind {
+    width: 50vw;
+    height: 2rem;
+    margin-top: 0.5rem;
+    border-radius: 5px;
+    margin-left: 0;
+    margin-right: 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-align: center;
+    background-color: rgba(119, 255, 0, 0.463);
+    border: 1px solid green;
+}
+
+.cardhldr {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
