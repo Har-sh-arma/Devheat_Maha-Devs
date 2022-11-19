@@ -1,38 +1,59 @@
 import './LSstyle.css'
-import { useState } from 'react'
+import { useState , useEffect} from 'react'
+import axios from 'axios';
+import env from "react-dotenv";
+
+
 const Spage = () => {
+    
+    const [Credentials, SetCred] = useState({ name: '', email: '', textPass: '' });
 
-    const [Credentials, SetCred] = useState({ username: '', email: '', password: '' });
+    const handleSubmit = async (e)=>{
+        e.preventDefault();
+        localStorage.setItem("email", document.getElementById('eml').value);
+        SetCred({ ...Credentials, name: document.getElementById('usrnm').value, email: document.getElementById('eml').value, textPass: document.getElementById('pswd').value });
+        const response = await axios.post("http://192.168.2.178:5000/", Credentials);
+        if(response.status=== 200){
+            console.log("redirecting");
+            window.location.href = "/Otp";
+        }
+      }
 
+    const SetCredentials = () =>{
+        console.log(Credentials);
+        localStorage.setItem("email", document.getElementById('eml').value);
+        SetCred({ ...Credentials, name: document.getElementById('usrnm').value, email: document.getElementById('eml').value, textPass: document.getElementById('pswd').value });
+    }
 
     return (
         <div className='pgCont'>
             <div className='center'>
                 <h1 id='mainh'>Signup</h1>
-                <form onSubmit={e => SetCred({ ...Credentials, username: document.getElementById('usrnm').value, email: document.getElementById('eml').value, password: document.getElementById('pswd').value })} action='./Otp' >
+                <form onSubmit={handleSubmit}>
 
                     <div className='txt_field'>
-                        <input type='text' id='usrnm' required />
+                        <input type='text' id='usrnm' onChange={SetCredentials} required />
                         <span></span>
                         <label>Username</label>
                     </div>
 
                     <div className='txt_field'>
-                        <input type='email' id='eml' required />
+                        <input type='email' id='eml' onChange={SetCredentials} required />
                         <span></span>
                         <label>Email</label>
                     </div>
 
                     <div className='txt_field'>
-                        <input type='password' id='pswd' required minLength={6} maxLength={25} />
+                        <input type='password' id='pswd' onChange={SetCredentials} required minLength={6} maxLength={25} />
                         <span></span>
                         <label>Password</label>
                     </div>
 
-                    <input type='submit' value='Signup' />
+                        <input type="submit" value="Signup"/>
+                    {/* <button className="sub" onClick={master_login} >Signup</button> */}
 
                     <div className='signup_link'>
-                        Already have an account? <a href='./Lspage' >Login</a>
+                        Already have an account? <a href='./Lspage'>Login</a>
                     </div>
 
                 </form>
