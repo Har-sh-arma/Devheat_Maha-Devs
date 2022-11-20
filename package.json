@@ -1,7 +1,7 @@
 {
-  "name": "newsletter",
+  "name": "FarmaSutra",
   "version": "1.0.0",
-  "description": "A fully working newsletter to deliver all the news realted to Entrepreneurship.",
+  "description": "Backend app to deliver most effective guidance to farmers.",
   "main": "index.js",
   "scripts": {
     "dev": "nodemon index.js",
@@ -9,17 +9,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/prakhar728/Newsletter.git"
+    "url": "git+https://github.com/Har-sh-arma/Devheat_Maha-Devs.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/prakhar728/Newsletter/issues"
+    "url": "https://github.com/Har-sh-arma/Devheat_Maha-Devs/issues"
   },
-  "homepage": "https://github.com/prakhar728/Newsletter#readme",
+  "homepage": "https://github.com/Har-sh-arma/Devheat_Maha-Devs#readme",
   "dependencies": {
     "bcrypt": "^5.1.0",
+    "cors": "^2.8.5",
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
     "mongoose": "^6.6.7",

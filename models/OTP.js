@@ -2,9 +2,12 @@
 
 const mongoose = require('mongoose');
 
-const otpSchema = new mongoose.Schema({otp_hash:String,
-                                        email: String,
-					name:String});
+const otpSchema = new mongoose.Schema({
+        otp_hash: String,
+        email: String,
+        name: String,
+	passHash: String
+});
 
 const OTP = mongoose.model("OTP", otpSchema);
 

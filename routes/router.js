@@ -1,11 +1,11 @@
 const router = require('express').Router();
 const {userGetOtp, userVerifyOtp} = require('../action/signup.js')
-
-router.get('/',(req,res)=>{
-    res.status(200).send({"Message":"Beep Beep Boop Boop the server is acting"});
-
-})
+const auth = require('../action/auth.js');
+const addData = require('../action/AddUserData');
 
 router.post('/',userGetOtp);
 router.post('/verify', userVerifyOtp);
+router.post('/login', auth);
+router.post('/addData', addData);
+
 module.exports= router;
