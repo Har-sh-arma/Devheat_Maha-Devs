@@ -1,5 +1,6 @@
 import React from 'react'
 import { useState, useEffect } from 'react'
+import Extra from '../Extra/Extra'
 import './style.css'
 const Main = () => {
 
@@ -19,7 +20,7 @@ const Main = () => {
             const item = document.getElementById('menu').value;
             const node = document.createElement('button');
             node.className = 'cropind';
-            node.id = 'crop';
+            node.id = 'crop' + (count + 1);
             const textnode = document.createTextNode(item);
             node.appendChild(textnode);
             document.querySelector('.cardhldr').appendChild(node);
@@ -37,6 +38,8 @@ const Main = () => {
     })
     return (
         <div className='mao' onLoad={apndch}>
+
+            <Extra />
             <div className='current'>
                 <h2>Planted Crops</h2>
                 <div className='cardhldr'>

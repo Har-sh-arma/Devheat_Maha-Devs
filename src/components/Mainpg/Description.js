@@ -12,7 +12,7 @@ const Description = () => {
         <div className='mao'>
             <div className='butcont'>
                 <button id='plantthis' onClick={funcH}>
-                    Plant this Crop
+                    Back to Main Page
                 </button>
             </div>
         </div>

@@ -129,7 +129,7 @@ input[type="submit"]:hover {
 .pgCont {
     height: 100vh;
     width: 100%;
-    background-image: url(../../../media/Sep21_02_1176415931.jpg);
+    background-image: url(../../../media/mainpic.png);
     /* background-color: gray; */
     background-size: cover;
 }

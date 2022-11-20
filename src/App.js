@@ -6,6 +6,7 @@ import Otp from "./components/Login_Signup/Otp";
 import MapsMain from "./components/Location/MapsMain";
 import Description from "./components/Mainpg/Description";
 import Details from "./components/Cropdetails/Details";
+import Extra from "./components/Extra/Extra";
 
 // import Maps from "./components/Location/Maps";
 
@@ -22,6 +23,7 @@ function App() {
           <Route path="/MapsMain" element={<MapsMain />} />
           <Route path='/Description' element={<Description />} />
           <Route path='/Details' element={<Details />} />
+          <Route path='/Extra' element={<Extra />} />
         </Routes>
       </BrowserRouter>
     </>

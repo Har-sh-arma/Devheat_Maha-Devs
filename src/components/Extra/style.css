@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+.nav_bar {
+    position: absolute;
+    width: 200px;
+    height: 100vh;
+    background-color: rgb(215, 255, 120);
+    left: -200px;
+    /* margin-top: -70px; */
+}
+
+.nav_bar.active {
+    left: 0;
+}
+
+.nav_bar ul li {
+    list-style: none;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    color: #f4d8ae;
+
+}
+
+.nav_bar ul li a {
+    text-decoration: none;
+    color: black;
+
+}
+
+.nav_bar li:hover {
+    font-size: 21px;
+    /* color: #a8dadc; */
+    background-color: rgb(194, 255, 52);
+}
+
+
+.nav_bar .toogle_but {
+    position: absolute;
+    left: 215px;
+    top: 10px;
+}
+
+.toogle_but span {
+    width: 35px;
+    height: 3px;
+    background-color: black;
+    display: block;
+    margin-top: 4px;
+}
